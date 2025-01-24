@@ -1,0 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* База */
+body{
+  font-family: "Montserrat",sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-optical-sizing: auto;
+}
+.container{
+  max-width: 1000px;
+  padding:0 15px;
+  margin: 0 auto;
+  
+}
+a{
+  font-size: 22px;
+}
+/* Шапка */
+header{
+  position: relative;
+  /* background: linear-gradient(-43deg, #2f2f2f 0%, #202020 100%); */
+  background-color: #000000;
+  
+  border-bottom-right-radius: 0px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color:#ffffff;
+}
+.header-video{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-right-radius: 10px;
+  opacity:0.5;
+}
+header .container{
+  position: relative;
+  z-index: 7;
+}
+.header-rom{
+  display: flex;
+  flex-direction: row;
+  column-gap: 60px;
+  align-items: center;
+
+}
+.header-rom img{
+  border-radius: 10px;
+  max-width: 480px;
+}
+h1{
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.header-text  p{
+  position: left;
+  margin-bottom: 100px;
+  font-size: 26px;
+  font-weight: 300;
+}
+.header-btns{
+  display: flex;
+  column-gap:20px;
+}
+.btn{
+  height: 45px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius:100px;
+  color:hsl(0, 0%, 0%);
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+  
+}
+.btn:hover{
+  background-color: #ffffff;
+}
+.btn-border{
+  height: 45px;
+  padding-top: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border:1px solid #ffffff;
+  border-radius:100px;
+  color:hsl(0, 0%, 100%);
+  font-size: 15px;
+  transition: all 0.2s ease-in;
+
+}
+.btn-border:hover{
+  border:1px solid #1782CF;
+}
+/* Портфолио */
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+  font-size: 50px;
+}
+.card img{
+  margin-bottom: 30px;
+  border-radius: 30px;
+  transition: opacity 0.2s ease-in;
+}
+.card img:hover{
+  opacity:0.80;
+  cursor: pointer;
+}
+.portfolio h2{
+font-size: 65px;
+margin-bottom: 50px;
+}
+/* Контакты */
+.contakts{
+  background-color:#000000;
+  padding: 10px 0;
+  border-top-left-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contakts h2{
+  font-size: 50px;
+  color:#FFF;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.messangers{
+  display:flex;
+  column-gap:50px;
+}
+.messanger{
+  flex-grow: 1;
+  border:0px solid  #363636;
+  border-radius:100px;
+  padding: 5px 5px;
+  display: flex;
+  column-gap:5px;
+  align-items:center;
+transition: background-color 0.2s ease-in;
+}
+.messanger:hover{
+  background-color: #000000;
+  cursor: pointer;
+}
+.messanger a{
+  color:#ffffff;
+}
+/* Футер */
+footer{
+  background-color:#050505;
+  padding: 5px 0;
+  color: #ffffff;
+}
+.footer-inner{
+  text-align: center;
+}
+.footer-inner p{
+  margin-top: 10px;
+}
+
+.myAnimate {
+  animation: myAnimate 3s;
+}
+@keyframes myAnimate {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}

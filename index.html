@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/my.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-rom">
+          <img src="" alt="" />
+          <div class="header-text">
+            <h1 class="myAnimate">Андронов Ярослав</h1>
+            <p class="myAnimate">
+              студент академии управления,<br />
+              ПИвУКИС-22
+            </p>
+            <div class="header-btns">
+              <b class="btn" href="#">Портфолио</b>
+              <b class="btn-border" href="#">Контакты</b>
+            </div>
+          </div>
+        </div>
+      </div>
+      <video class="header-video" autoplay muted loop>
+        <source type="video/mp4" src="video/1.mp4">
+      </video>
+    </header>
+    <main>
+      <div class="container">
+        <section class="portfolio">
+          <h2 class="myAnimate">Портфолио</h2>
+          <div class="card">
+            <img src="img/project/1.png" class="wow animate__slideInUp">
+          </div>
+          <div class="card">
+            <img src="img/project/2.png" class="wow animate__slideInUp">
+          </div>
+          <div class="card">
+            <img src="img/project/3.png" class="wow animate__slideInUp">
+            До нового года осталось
+            <div class="countdown">
+              <div class="time" id="timer">00:00:00:00</div>
+            </div>
+            
+            <script>
+              function updateCountdown() {
+                const now = new Date();
+                const nextYear = now.getFullYear() + 1;
+                const newYearDate = new Date(`January 1, ${nextYear} 00:00:00`);
+                const diff = newYearDate - now;
+            
+                if (diff > 0) {
+                  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+                  const seconds = Math.floor((diff / 1000) % 60);
+            
+                  document.getElementById("timer"). textContent =
+                    `${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+                } else {
+                  document.getElementById("timer")
+                }
+              }
+            
+              setInterval(updateCountdown, 1000);
+              updateCountdown();
+            </script>
+            </body>
+            </html>
+          </div>
+        </section>
+      </div>
+      <section class="contakts">
+          <h2>Контакты</h2>
+          <div class="messangers">
+            <div class="messanger">
+               <img src="" alt="">
+              <a  href="">Написать в Телеграм</a>
+             
+            </div>
+            <div class="messanger">
+              <img src="" alt="">
+              <a href="">Написать в WhatsApp</a>
+            </div>
+            <div class="messanger">
+              <img src="" alt="">
+              <a href="">Написать в ВКонтакте</a>
+            </div>
+          </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <p>© Ярослав Андронов<br>HTML верстальщик, создание сайтов Донецк
+ </p>
+          <p><a href="#">💻 Макет сверстан на курсе Интернет программирование</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="js/my.js"></script>
+  </body>
+  <html>
+    
